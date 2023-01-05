@@ -29,11 +29,14 @@ Available banknotes:
 totalCost = input("What is the amount to be paid?: ")
 amountRecieved = input("What is the amount recieved from the customer?: ")
 
+totalCost = float(totalCost)
+amountRecieved = float(amountRecieved)
 if totalCost > amountRecieved:
     print("Insufficient tender.")
 
 else:
     totalChange = float(amountRecieved) - float(totalCost)
+    totalChange = round(totalChange, 2)
     print("Change: $" + str(totalChange))
 
     totalChange = float(totalChange)
