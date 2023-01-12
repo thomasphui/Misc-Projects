@@ -30,9 +30,9 @@ def encode_morse(stringInput):
     morseCodeReturn = ""
     for character in stringInput:
         if character in char_to_dots.keys():
-            morseCodeReturn = morseCodeReturn + char_to_dots[character]
+            morseCodeReturn = morseCodeReturn + char_to_dots[character] + " "
         if character == " ":
-            morseCodeReturn = morseCodeReturn + " "
+            morseCodeReturn = morseCodeReturn + "  "
     return morseCodeReturn
 
 print(encode_morse("HELP ME !"))
