@@ -15,6 +15,7 @@ encode_morse("HELP ME !") ➞ ".... . .-.. .--.   -- .   -.-.--"
 
 def encode_morse(stringInput):
     
+    stringInput = stringInput.upper()
     char_to_dots = {
   'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
   'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
